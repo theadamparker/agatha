@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 dist/
 *.tsbuildinfo
 .DS_Store
@@ -17,5 +17,6 @@ package-lock.json
 .eslintcache
 .pnpm-store
 .netlify
+
 
 
