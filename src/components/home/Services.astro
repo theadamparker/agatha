@@ -2,21 +2,39 @@
 const services = [
   {
     step: '01',
-    name: 'Trauma',
+    name: 'Emotional Well-being',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Therapy for conditions like anxiety, depression, and PTSD to improve emotional regulation and coping skills.',
   },
   {
     step: '02',
-    name: 'Anxiety',
+    name: 'Trauma & Abuse Recovery',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Helping clients heal from past trauma, abuse, or violence using trauma-informed techniques like CBT.',
   },
   {
     step: '03',
-    name: 'Something else',
+    name: 'Family Therapy & Relationship Counseling',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Improving family dynamics, communication, and resolving conflicts in relationships or parenting struggles.',
+  },
+  {
+    step: '04',
+    name: 'Child & Adolescent Therapy',
+    description:
+      'Addressing emotional, behavioral, or mental health issues in children and teens, with family support.',
+  },
+  {
+    step: '05',
+    name: 'Grief & Loss',
+    description:
+      'Helping individuals navigate grief and adjust to life after the loss of a loved one or significant change.',
+  },
+  {
+    step: '06',
+    name: 'Transitions & Stress Management',
+    description:
+      'Helping clients cope with major life changes (career shifts, relocation, divorce) and develop strategies to manage stress and build resilience.',
   },
 ];
 ---
@@ -24,7 +42,7 @@ const services = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Focus areas</h2>
       <div class="grid gap-8 lg:grid-cols-3">
         {
           services.map((service) => (
@@ -32,7 +50,7 @@ const services = [
               <p class="text-sm">{service.step}</p>
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-medium">{service.name}</h3>
-                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-sm">
                   {service.description}
                 </p>
               </div>
