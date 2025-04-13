@@ -1,8 +1,6 @@
-# Astro on Netlify Platform Starter
+# Agatha.nyc
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
-
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+Based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
 
 ## Astro Commands
 
@@ -19,7 +17,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Deploying to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/af531827-8ec7-49b6-acb5-d5b8ea4df011/deploy-status)](https://app.netlify.com/sites/agathanyc/deploys)
 
 ## Developing Locally
 
