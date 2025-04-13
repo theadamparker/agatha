@@ -1,5 +1,10 @@
 @use 'mixins';
 
+:root {
+    --color-cta-bg: #3c5084;
+    --color-cta-bg-hover: #5e77b6;
+}
+
 body {
     // background: white;
 }
