@@ -1,5 +1,9 @@
 ---
+import PsychologyTodayWidget from "../home/PsychologyTodayWidget.astro";
+const showWidget = true;
+
 import GA from '../GA.astro';
+
 const year = new Date().getFullYear();
 const bottomLinks = [
   {
@@ -58,12 +62,13 @@ const disclaimer =
       </div>
     </div>
     <div
-      class="flex flex-col justify-between gap-3 sm:gap-12 lg:flex-row mt-16 pt-4 border-t border-primary-900/10 dark:border-primary-300/10"
+      class="flex flex-col justify-between gap-3 lg:gap-12 lg:flex-row mt-16 pt-4 border-t border-primary-900/10 dark:border-primary-300/10 lg:items-center"
     >
       <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">
         © {year} Agatha Parker
       </p>
-      <div class="links flex gap-12">
+      <div class="links flex flex-col sm:flex-row gap-4 md:gap-12 items-start sm:items-center sm:flex-wrap">
+        
         <div class="text-primary-950/70 dark:text-primary-200/70 text-sm">
           therapy@agatha.nyc
         </div>
@@ -73,6 +78,7 @@ const disclaimer =
         >
           Privacy Policy
         </a>
+        {showWidget ? <div class="basis-1/1"><PsychologyTodayWidget /></div> : null}
       </div>
     </div>
   </div>
