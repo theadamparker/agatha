@@ -2,6 +2,8 @@
 import PsychologyTodayWidget from "../home/PsychologyTodayWidget.astro";
 const showWidget = false;
 
+import GA from '../GA.astro';
+
 const year = new Date().getFullYear();
 const bottomLinks = [
   {
@@ -81,6 +83,8 @@ const disclaimer =
     </div>
   </div>
 </footer>
+
+<GA />
 
 <style lang="scss">
   .disclaimer {
